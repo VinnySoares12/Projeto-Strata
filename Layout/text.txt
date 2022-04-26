@@ -1,26 +1,5 @@
 
 
-Elements
-Text
-This is bold and this is strong. This is italic and this is emphasized. This is superscript text and this is subscript text. This is underlined and this is code: for (;;) { ... }. Finally, this is a link.
-
-titulo h1
-titulo h2
-titulo h3
-titulo h4
-titulo h5
-titulo h6
-Esta é uma citação tirada da Mozilla Developer Center.
-
-outros paragráfos
-
-According to Mozilla's website, Firefox 1.0 was released in 2004 and became a big success.
-
-Preformatado
-
-    <script>
-        alert('oi');
-    </script>
                 
 Listas
 Não ordenada
