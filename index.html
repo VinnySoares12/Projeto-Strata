@@ -20,8 +20,11 @@
             <h1 class="main-header-title">
                The first project of <br> 
                <strong>Vinny Soares</strong>
-               <a href="http://htmlSup.net" class="main-header-link">HtmlSup</a>
+               
             </h1>
+            <p>
+                <a href="http://htmlSup.net" class="main-header-link">HtmlSup</a>
+            </p>
         </header>
 
         <main class="main-content">
@@ -69,15 +72,15 @@
                     <div class="col-2">
                         <article class="recent-works-card">
                             <a class="imagem-link" href="/images/fulls/04.jpg">
-                                <img src="images/thumbs/04.jpg" title="Descrição">
+                                <img src="images/thumbs/04.jpg" alt="Descrição">
                             </a>
-                            <p class="recent-works-card-title">Quam neque phasellus</p>
+                            <p class="recent-works-card-alt">Quam neque phasellus</p>
                             <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
                         </article>
         
                         <article class="recent-works-card">
                             <a class="imagem-link" href="/images/fulls/05.jpg">
-                                <img src="images/thumbs/05.jpg" title="Descrição">
+                                <img src="images/thumbs/05.jpg" alt="Descrição">
                             </a>
                             <p class="recent-works-card-title">Nunc enim commodo aliquet</p>
                             <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
@@ -85,7 +88,7 @@
         
                         <article class="recent-works-card">
                             <a class="imagem-link" href="/images/fulls/06.jpg">
-                                <img src="images/thumbs/06.jpg" title="Descrição">
+                                <img src="images/thumbs/06.jpg" alt="Descrição">
                             </a>
                             <p class="recent-works-card-title">Risus ornare lacinia</p>
                             <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
@@ -128,17 +131,17 @@
                         <address>
 
                             <p>
-                                <span>Endereço</span>
+                                <span>Endereço: </span>
                                 234 Somewhere Rd. Nashville, TN 00000 United States
                             </p>
         
                             <p>
-                                <span>Telefone</span>
+                                <span>Telefone: </span>
                                 000-000-000
                             </p>
         
                             <p>
-                                <span>E-mail</span>
+                                <span>E-mail: </span>
                                 email@server.com
                             </p>
                         </address>
@@ -165,7 +168,8 @@
              <!--citação-->
              <blockquote cite="http://developer.mozilla.org"> 
                 
-                    Esta é uma citação tirada da Mozilla Developer Center.
+                    <p>Esta é uma citação tirada da Mozilla Developer Center.</p>
+                    <p>Outros paragráfos</p>
                 
             </blockquote>
             
@@ -175,13 +179,11 @@
 
             <h4>Preformatado</h4>
 
-            <pre>
-                <code>
+            <pre><code>
          &lt;script&gt;
             alert('oi');
          &lt;script&gt;
-                </code>
-            </pre>
+            </code></pre>
 
             <h4>Listas</h4>
             <div class="row">
@@ -210,10 +212,10 @@
 
             <h5>Icons</h5>
             <ul class="ul-icons">
-                <li><i class="fab fa-twitter"></i></li>
-                <li><i class="fab fa-facebook"></i></li>
-                <li><i class="fab fa-github"></i></li>
-                <li><i class="fab fa-instagram"></i></li>
+                <li><span class="hidden">Twitter</span><i class="fab fa-twitter"></i></li>
+                <li><span class="hidden">Facebook</span><i class="fab fa-facebook"></i></li>
+                <li><span class="hidden">Github</span><i class="fab fa-github"></i></li>
+                <li><span class="hidden">Instagram</span><i class="fab fa-instagram"></i></li>
             </ul>
               </div>
             </div>
@@ -368,34 +370,35 @@
 
 
             <h5>Forms</h5>
+            <form action="#" method="post">
 
-            <label for="name">Nome</label>
-            <input type="text" name="name" id="name" placeholder="Digite o seu nome">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Digite o seu nome">
 
-            <label for="name">Email</label>
-            <input type="text" name="email" id="email" placeholder="Digite o seu e-mail">
+                <label for="name">Email</label>
+                <input type="text" name="email" id="email" placeholder="Digite o seu e-mail">
 
-            <select>
-                <option value="0">Selecione</option>
-                <option value="1">HTML</option>
-                <option value="2">CSS</option>
-                <option value="3">JavaScript</option>
-                <option value="4">ReactJS</option>
-            </select>
+                <select>
+                    <option value="0">Selecione</option>
+                    <option value="1">HTML</option>
+                    <option value="2">CSS</option>
+                    <option value="3">JavaScript</option>
+                    <option value="4">ReactJS</option>
+                </select>
 
-            <label><input type="radio" value="baixa" name="prioridade">Baixa-Prioridade</label>
-            <label><input type="radio" value="media" name="prioridade">Média-Prioridade</label>
-            <label><input type="radio" value="alta" name="prioridade">Alta-Prioridade</label>
+                <label><input type="radio" value="baixa" name="prioridade">Baixa-Prioridade</label>
+                <label><input type="radio" value="media" name="prioridade">Média-Prioridade</label>
+                <label><input type="radio" value="alta" name="prioridade">Alta-Prioridade</label>
 
-            <label><input type="checkbox" name="copy" value="1">Envie-me uma cópia</label>
-            <label><input type="checkbox" name="human" value="1">Sou humano</label>
+                <label><input type="checkbox" name="copy" value="1">Envie-me uma cópia</label>
+                <label><input type="checkbox" name="human" value="1">Sou humano</label>
 
-            <label for="msg">Mensagem:</label>
-            <textarea placeholder="Digite uma mensagem" id="msg"></textarea>
+                <label for="msg">Mensagem:</label>
+                <textarea placeholder="Digite uma mensagem" id="msg"></textarea>
 
-            <input type="submit" class="button-default" value="Enviar">
-            <input type="reset" class="button-default button-default-stroke" value="Limpar">
-            
+                <input type="submit" class="button-default" value="Enviar">
+                <input type="reset" class="button-default button-default-stroke" value="Limpar">
+            </form>
             </section> 
 
             <section class="main-content-section">
@@ -434,10 +437,10 @@
         </main>
         <footer class="main-footer">
            <ul class="ul-icons">
-               <li><a href="#" class="icon-link"><i class="fab fa-twitter"></i></a></li>
-               <li><a href="#" class="icon-link"><i class="fab fa-facebook"></i></a></li>
-               <li><a href="#" class="icon-link"><i class="fab fa-github"></i></a></li>
-               <li><a href="#" class="icon-link"><i class="fab fa-instagram"></i></a></li>
+               <li><a href="#" class="icon-link"><span class="hidden">Twitter</span><i class="fab fa-twitter"></i></a></li>
+               <li><a href="#" class="icon-link"><span class="hidden">Facebook</span><i class="fab fa-facebook"></i></a></li>
+               <li><a href="#" class="icon-link"><span class="hidden">Github</span><i class="fab fa-github"></i></a></li>
+               <li><a href="#" class="icon-link"><span class="hidden">Instagram</span><i class="fab fa-instagram"></i></a></li>
                
            </ul>
            <ul class="copyright">
